@@ -8,7 +8,7 @@ import {
 } from '@bot-whatsapp/bot'
 
 const flowBienvenida = addKeyword('hola').addAnswer('buenas! bienvenido')
-
+const port: number = parseInt(process.env.PORT || '3000', 10)
 const main = async () => {
   const provider = createProvider(BaileysProvider)
 
@@ -18,7 +18,7 @@ const main = async () => {
     provider
   })
 
-  provider.initHttpServer(3000)
+  provider.initHttpServer(port)
 
   provider.http.server.post(
     '/send-message',
