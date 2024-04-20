@@ -33,7 +33,7 @@ const setupMessageEndpoint = (provider: any) => {
       const { message, phone } = req.body
 
       await bot.sendMessage(String(phone), message, {})
-      res.end('se envió el mensaje')
+      res.end('se envió el mensaje.')
     })
   )
 }
