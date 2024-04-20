@@ -31,7 +31,7 @@ const main = async () => {
 
       // await bot.sendMessage(phone, message, {})
 
-      res.end('se envio')
+      res.end('se envio mensaje')
     })
   )
 }
