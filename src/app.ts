@@ -18,7 +18,7 @@ const main = async () => {
     provider
   })
 
-  provider.initHttpServer(3002)
+  provider.initHttpServer(3000)
 
   provider.http.server.post(
     '/send-message',
@@ -27,9 +27,9 @@ const main = async () => {
       const message = body.message
       const phone = body.phone
 
-      // await bot.sendMessage('573217442971', 'pepe hola hola', {})
+      await bot.sendMessage('573217442971', 'pepe hola hola', {})
 
-      await bot.sendMessage(phone, message, {})
+      // await bot.sendMessage(phone, message, {})
 
       res.end('se envio')
     })
