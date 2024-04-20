@@ -27,7 +27,7 @@ const main = async () => {
       const message = body.message
       const phone = body.phone
 
-      await bot.sendMessage('573217442971', 'pepe hola hola', {})
+      await bot.sendMessage('573217442971', 'como estas', {})
 
       // await bot.sendMessage(phone, message, {})
 
